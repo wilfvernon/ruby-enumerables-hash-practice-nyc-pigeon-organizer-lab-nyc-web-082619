@@ -31,15 +31,16 @@ def nyc_pigeon_organizer(data)
             if name == bird
             sorted[bird][key].push(nest.to_s)
             end
-          end
-          sorted[bird][cat].uniq!
-        end  
-        sorted[bird][cat].uniq!
+        end 
       end  
-       binding.pry
-      sorted[bird][cat].uniq!
     end
   end
- 
+  sorted.each_key do |bird|
+    sorted[bird].each_key do |nest|
+      binding.pry
+      sorted[bird][nest].uniq!
+    end
+  end
+  
   sorted
 end
