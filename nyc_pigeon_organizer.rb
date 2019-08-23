@@ -37,10 +37,11 @@ def nyc_pigeon_organizer(data)
   end
   sorted.each_key do |bird|
     sorted[bird].each_key do |nest|
-      binding.pry
+      #binding.pry
       sorted[bird][nest].uniq!
     end
   end 
+  binding.pry
   sorted
 end
 end
