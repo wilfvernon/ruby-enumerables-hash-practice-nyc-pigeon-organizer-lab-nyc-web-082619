@@ -27,9 +27,9 @@ def nyc_pigeon_organizer(data)
       data.each do|key, value|
         value.each do |nest, names|
           names.each do |name|
-            binding.pry
+            #binding.pry
             if name == bird
-            sorted[bird][key].push(nest)
+            sorted[bird][key].push(nest.to_s)
             end
           end
         end  
