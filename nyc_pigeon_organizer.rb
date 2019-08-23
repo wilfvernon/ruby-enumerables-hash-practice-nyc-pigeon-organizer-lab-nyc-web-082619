@@ -35,7 +35,8 @@ def nyc_pigeon_organizer(data)
         end  
       end  
     end
+  binding.pry
   sorted
   end    
-  binding.pry
+  
 end
