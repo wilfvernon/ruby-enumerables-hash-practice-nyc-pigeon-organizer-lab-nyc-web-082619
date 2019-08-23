@@ -34,9 +34,10 @@ def nyc_pigeon_organizer(data)
           end
         end  
       end  
+      binding.pry
       sorted[bird][info].uniq
     end
   end
-  binding.pry
+  
   sorted
 end
