@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
   end
   
   sorted.each do |bird, info|
-    sorted[bird].each_key do
+    sorted[bird].each do |cat, res| 
       data.each do|key, value|
         value.each do |nest, names|
           names.each do |name|
@@ -34,9 +34,8 @@ def nyc_pigeon_organizer(data)
           end
         end  
       end  
+      sorted[bird][info].uniq
     end
-  binding.pry
+  end
   sorted
-  end    
-  
 end
