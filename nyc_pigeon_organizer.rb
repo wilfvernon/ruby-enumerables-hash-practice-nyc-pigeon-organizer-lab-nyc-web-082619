@@ -41,6 +41,6 @@ def nyc_pigeon_organizer(data)
       sorted[bird][nest].uniq!
     end
   end
-  
+ end 
   sorted
 end
