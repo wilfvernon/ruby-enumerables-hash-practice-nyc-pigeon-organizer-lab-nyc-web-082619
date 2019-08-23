@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
    sorted[bird] = Hash[catalogue_array.collect { |item| [item, []] } ]
   end
   
-  sorted.each_key do |bird|
+  sorted.each do |bird, info|
     sorted[bird].each_key do
       data.each do|key, value|
         value.each do |nest, names|
