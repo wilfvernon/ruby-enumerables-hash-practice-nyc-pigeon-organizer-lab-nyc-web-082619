@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
     catalogue_array.push(symbol)
   end
   sorted.each_key do |bird|
-   sorted[bird] = Hash[catalogue_array.collect { |item| [item, {}] } ]
+   sorted[bird] = Hash[catalogue_array.collect { |item| [item, []] } ]
   end
   
   sorted.each_key do |bird|
@@ -29,7 +29,7 @@ def nyc_pigeon_organizer(data)
           names.each do |name|
             binding.pry
             if name == bird
-            sorted[bird][key] = 
+            sorted[bird][key].push(nest)
             end
           end
         end  
